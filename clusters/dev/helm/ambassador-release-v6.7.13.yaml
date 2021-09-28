@@ -15,13 +15,6 @@ spec:
   install:
     createNamespace: true
   interval: 1m0s
-  timeout: 10m
-  install:
-    remediation:
-      retries: 3
-  upgrade:
-    remediation:
-      retries: 3
   targetNamespace: ambassador
   values:
     replicaCount: 1
